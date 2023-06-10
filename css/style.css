@@ -1,27 +1,52 @@
-* {
-  font-family: Helvetica;
-  margin: 0px;
-  border: 0px;
-  padding: 0px;
-  list-style: none;
-  text-decoration: none;
-  outline: none;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  min-height: 100vh;
-  background-color: rgb(202, 240, 255);
-  /* min-width: 100vh; */
-}
-
 /* Header */
 .h {
   background-color: rgb(202, 240, 255);
 }
 
+.m_art1 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .m_art1 h2 {
+    font-family: Helvetica;
+    padding-top: 15px;
+    font-size: 200%;
+    justify-content: center;
+  }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+  .m_art1 h2 {
+    font-family: Helvetica;
+    padding-top: 15px;
+    font-size: 300%;
+    justify-content: center;
+  }
+}
+@media (min-width: 1025px) {
+  .m_art1 h2 {
+    font-family: Helvetica;
+    padding-top: 15px;
+    font-size: 400%;
+    justify-content: center;
+  }
+}
+.m_art1 p {
+  font-family: Helvetica;
+  margin: 20px;
+  font-size: 130%;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .m_art1 p {
+    font-family: Helvetica;
+    margin: 20px;
+    font-size: 100%;
+  }
+}
 .h_ul1 {
   padding: 10px;
   height: 20px;
@@ -32,14 +57,16 @@ body {
   list-style: none;
   background-color: rgb(240, 240, 240);
 }
-.h_ul1 .h_ul1 li {
+
+.h_ul1 li {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   list-style: none;
 }
-.h_ul1 .h_ul1 img {
+
+.h_ul1 img {
   flex: 1;
   width: 35px;
   height: 35px;
@@ -59,7 +86,8 @@ body {
   align-items: center;
   background-color: rgb(240, 240, 240);
 }
-.h_art2 .h_art2 h1 {
+
+.h_art2 h1 {
   font-family: Helvetica;
   font-size: 50px;
   padding: 15px;
@@ -71,9 +99,18 @@ body {
   width: 80%;
 }
 
-/* Main Index*/
+/* Main*/
 .m {
   background-color: rgb(202, 240, 255);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  background-color: rgb(202, 240, 255);
+  /* min-width: 100vh; */
 }
 
 .m_div1 {
@@ -128,50 +165,6 @@ body {
     padding-bottom: 15px; */
 }
 
-.m_art1 {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-@media (max-width: 768px) {
-  .m_art1 h2 {
-    font-family: Helvetica;
-    padding-top: 15px;
-    font-size: 200%;
-    justify-content: center;
-  }
-}
-@media (min-width: 769px) and (max-width: 1024px) {
-  .m_art1 h2 {
-    font-family: Helvetica;
-    padding-top: 15px;
-    font-size: 300%;
-    justify-content: center;
-  }
-}
-@media (min-width: 1025px) {
-  .m_art1 h2 {
-    font-family: Helvetica;
-    padding-top: 15px;
-    font-size: 400%;
-    justify-content: center;
-  }
-}
-.m_art1 p {
-  font-family: Helvetica;
-  margin: 20px;
-  font-size: 130%;
-  text-align: left;
-}
-
-@media (max-width: 768px) {
-  .m_art1 p {
-    font-family: Helvetica;
-    margin: 20px;
-    font-size: 100%;
-  }
-}
 .m_art2 {
   display: flex;
   flex-direction: column;
@@ -381,13 +374,6 @@ body {
     align-items: center;
   }
 }
-/* .md_art2 section label{
-    margin-bottom: 30px;
-    text-align: center;
-    float: center;
-    font-size: 60px;
-    justify-content: center;
-} */
 .md_art2 section div {
   margin-top: 3px;
   position: relative;
@@ -713,6 +699,31 @@ body {
   }
 }
 /* Pagina Contacto */
+#header_b {
+  padding: 10px;
+  height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  background-color: rgb(240, 240, 240);
+}
+
+#header_b li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+#header_b img {
+  flex: 1;
+  width: 35px;
+  height: 35px;
+}
+
 @media (max-width: 768px) {
   .sec_form {
     margin: 10px;
@@ -895,6 +906,25 @@ body {
   font-weight: bold;
   font-family: Helvetica;
   color: #e4e4e4;
+}
+
+* {
+  font-family: Helvetica;
+  margin: 0px;
+  border: 0px;
+  padding: 0px;
+  list-style: none;
+  text-decoration: none;
+  outline: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  min-height: 100vh;
+  background-color: rgb(202, 240, 255);
+  /* min-width: 100vh; */
 }
 
 /*# sourceMappingURL=style.css.map */
